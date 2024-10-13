@@ -40,3 +40,8 @@ kubectl port-forward pod/nginx -n fist-app 8081:80
 
 
   kubectl apply -f deployment.yaml -n fist-app
+
+  add service:
+  kubectl apply -f service.yaml -n fist-app
+
+  kubectl port-forward svc/nginx-svc -n fist-app 8080:80
