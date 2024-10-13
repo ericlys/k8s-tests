@@ -32,3 +32,11 @@ details: kubectl get pods -n fist-app
 
 forward nginx in external port:
 kubectl port-forward pod/nginx -n fist-app 8081:80
+
+ kubectl apply -f replicaset.yaml -n fist-app
+
+ delete 
+  kubectl delete rs nginx -n fist-app
+
+
+  kubectl apply -f deployment.yaml -n fist-app
